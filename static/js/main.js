@@ -14,3 +14,7 @@ function show(event, loginContent) {
     document.getElementById(loginContent).style.display = "flex";
     event.currentTarget.className += " active";
 }
+
+function goBack() {
+    window.history.back();
+}
