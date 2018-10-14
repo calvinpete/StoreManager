@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/user_register.css" />
+</head>
+<body>
+    <div class="header">
+        <a href="signup.html" class="logo">Store Manager</a>
+        <div class="header-right">
+            <a href="login.html">Admin Log in</a>
+        </div>
+    </div>
+    <div class="personal-details">
+        <div class="title">
+            <h2>Signup as Admin</h2>
+        </div>
+        <form class="signup">
+            <div class="username">
+                <label for="Username">Admin username:</label>
+                <input type="text" name="user_name" id="Username" placeholder="Display name" required />
+            </div>
+            <div class="phone-number">
+                <label for="PhoneNo">Phone number:</label>
+                <input type="number" name="PhoneNumber" id="PhoneNo" placeholder="Phone Number" required />
+            </div>
+            <div class="email-address">
+                <label for="Emailaddress">Email address:</label>
+                <input type="email" name="email_address" id="Emailaddress" placeholder="Email address" required />
+            </div>
+            <div class="password">
+                <label for="pwd">Admin password:</label>
+                <input type="password" name="user_password" id="pwd" placeholder="Password" required />
+            </div>
+            <div class="store-name">
+                <label for="StoreName">Store name:</label>
+                <input type="text" name="Store_name" id="StoreName" placeholder="Store name" required />
+            </div>
+            <div class="submit-button">
+                <button type="button" name="SubmitButton">CREATE AN ACCOUNT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
