@@ -1,6 +1,6 @@
 * {box-sizing: border-box;}
 
-.personal_details {
+.personal-details {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ input:focus {
     outline: none;
 }
 
-.submit_button button {
+.submit-button button {
     cursor: pointer;
     border-radius: 4px;
     border: none;
@@ -67,7 +67,7 @@ input:focus {
     padding: 12px 31px;
 }
 
-.submit_button button:hover {
+.submit-button button:hover {
     background: #0591ba;
 }
 
