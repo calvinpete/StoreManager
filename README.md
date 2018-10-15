@@ -12,12 +12,12 @@ Visit: [Store Manager](https://github.com/calvinpete/StoreManager.git)
 
 ## Access
 
-To access the admin pages, please fill in "admin" for admin username and pass for admin password
-To access the normal user's pages, please fill in "user" for username and pass for password
+* To access the admin pages, please fill in **admin** for admin username and **pass** for admin password
+* To access the normal user's pages, please fill in **user** for username and **pass** for password
 
 ## Urls
 
-* [Log In](https://calvinpete.github.io/StoreManager/login.html)
+* [Log In](https://calvinpete.github.io/StoreManager/templates/login.html)
 
 ## Features
 
