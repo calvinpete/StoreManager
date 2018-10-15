@@ -55,12 +55,7 @@ td button {
     cursor: pointer;
     border: none;
     outline: none;
-    background: rgba(58, 57, 57, 0.16);
-}
-
-td button span i {
-    font-size: 14px;
-    color:  #bbb;
+    background: rgba(0, 0, 0, 0.16);
 }
 
 tr[id] {
