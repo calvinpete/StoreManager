@@ -89,51 +89,53 @@
                 <label for="Search">Search:</label>
                 <input type="text" id="Search" name="search" placeholder="search inventory"/>
             </div>
-            <table class="stock-table">
-                <tr>
-                    <th>Product Code</th>
-                    <th>Product Name</th>
-                    <th>Category</th>
-                    <th>Product Description</th>
-                    <th>Cost (Shs.)</th>
-                    <th>Price (Shs.)</th>
-                    <th>Action</th>
-                </tr>
-                <tr class="product">
-                    <td>001</td>
-                    <td>UHT milk</td>
-                    <td>Drinks</td>
-                    <td>choclate Flavour</td>
-                    <td>1000</td>
-                    <td>1200</td>
-                    <td class="actions">
-                        <button type="button" class="view-info" onclick="ShowHide('001')" name="view_product">info</button>
-                    </td>
-                </tr>
-                <tr id="001">
-                    <td colspan="7">
-                        <p>Quantity held in stock: 1 box(@24 boxes)</p>
-                        <p>Minimum allowed in stock: 2 boxes(@24 boxes)</p>
-                    </td>
-                </tr>
-                <tr class="product">
-                    <td>002</td>
-                    <td>Omo</td>
-                    <td>Detergent</td>
-                    <td>1kg odinary</td>
-                    <td>7500</td>
-                    <td>8000</td>
-                    <td class="actions">
-                        <button type="button" class="view-info" onclick="ShowHide('002')" name="view_product">info</button>
-                    </td>
-                </tr>
-                <tr id="002">
-                    <td colspan="7">
-                        <p>Quantity held in stock: 0</p>
-                        <p>Minimum allowed in stock: 5 boxes(@24 packets)</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="search-results">
+                <table class="stock-table">
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Product Description</th>
+                        <th>Cost (Shs.)</th>
+                        <th>Price (Shs.)</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr class="product">
+                        <td>001</td>
+                        <td>UHT milk</td>
+                        <td>Drinks</td>
+                        <td>choclate Flavour</td>
+                        <td>1000</td>
+                        <td>1200</td>
+                        <td class="actions">
+                            <button type="button" class="view-info" onclick="ShowHide('001')" name="view_product">info</button>
+                        </td>
+                    </tr>
+                    <tr id="001">
+                        <td colspan="7">
+                            <p>Quantity held in stock: 1 box(@24 boxes)</p>
+                            <p>Minimum allowed in stock: 2 boxes(@24 boxes)</p>
+                        </td>
+                    </tr>
+                    <tr class="product">
+                        <td>002</td>
+                        <td>Omo</td>
+                        <td>Detergent</td>
+                        <td>1kg odinary</td>
+                        <td>7500</td>
+                        <td>8000</td>
+                        <td class="actions">
+                            <button type="button" class="view-info" onclick="ShowHide('002')" name="view_product">info</button>
+                        </td>
+                    </tr>
+                    <tr id="002">
+                        <td colspan="7">
+                            <p>Quantity held in stock: 0</p>
+                            <p>Minimum allowed in stock: 5 boxes(@24 packets)</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
     <script src="../static/js/main.js"></script>

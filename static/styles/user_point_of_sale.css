@@ -6,6 +6,7 @@
     margin-top: 20px;
     margin-left: 100px;
 }
+
 label {
     font-size: 20px;
     margin-top: 5px;
@@ -85,4 +86,10 @@ tr:hover {background-color: #882424;}
 
 .buttons button:hover {
     background: #0591ba;
+}
+
+@media screen and (max-width: 650px) {
+    .container{margin: 20px 30px;}
+    .header {flex-direction: column;}
+    .shopping-cart, .calculator, .search-results {overflow-x: auto;}
 }
