@@ -18,3 +18,23 @@ function show(event, loginContent) {
 function goBack() {
     window.history.back();
 }
+
+function ShowHide(ProductInfo) {
+    var row = document.getElementById(ProductInfo);
+    if (row != null) {
+        if (row.style.display == "table-row") {
+            row.style.display = 'none';
+        }
+        else {
+            row.style.display = 'table-row';
+        }
+    }
+}
+
+function show(rowId) {
+    document.getElementById(rowId).style.display = "";
+}
+
+  function hideRow(rowId) {
+    document.getElementById(rowId).style.display = "none";
+}

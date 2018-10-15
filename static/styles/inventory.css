@@ -63,4 +63,13 @@ td button span i {
     color:  #bbb;
 }
 
-tr:hover {background-color: #882424;}
+tr[id] {
+    display: none;
+    overflow: hidden;
+}
+
+td p {
+    display: block;
+}
+
+.active, tr:hover {background-color: #882424;}
