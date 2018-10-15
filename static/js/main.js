@@ -31,10 +31,22 @@ function ShowHide(ProductInfo) {
     }
 }
 
-function show(rowId) {
-    document.getElementById(rowId).style.display = "";
+//function to check the username and password during an admin login
+function check(form) {
+    if(form.admin_name.value === "admin" && form.Admin_Password.value === "pass") {
+        location="admin_home.html"
+    }
+    else {
+        alert("Invaild Password or Username")
+    }
 }
 
-  function hideRow(rowId) {
-    document.getElementById(rowId).style.display = "none";
+//function to check the username and password during an user login
+function CheckUser(form) {
+    if(form.user_name.value === "user" && form.Password.value === "pass") {
+        location="user_home.html"
+    }
+    else {
+        alert("Invalid username or password")
+    }
 }

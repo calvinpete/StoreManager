@@ -19,14 +19,14 @@
         <form class="login">
             <div class="username">
                 <label for="Admin_Username">Admin username: </label>
-                <input type="text" name="user_name" id="Admin_Username" placeholder="User name" required />
+                <input type="text" name="admin_name" id="Admin_Username" placeholder="User name" required />
             </div>
             <div class="password">
                 <label for="admin_pwd">Admin password: </label>
-                <input type="password" name="Password" id="admin_pwd" placeholder="Password" required />    
+                <input type="password" name="Admin_Password" id="admin_pwd" placeholder="Password" required />    
             </div>
             <div class="submit_button">
-                <button type="button" name="SubmitButton">Submit</button>
+                <button type="button" name="SubmitButton" onclick="check(this.form)">Submit</button>
             </div>
         </form>
     </div>
@@ -41,7 +41,7 @@
                 <input type="password" name="Password" id="pwd" placeholder="Password" required />    
             </div>
             <div class="submit_button">
-                <button type="button" name="SubmitButton">Submit</button>
+                <button type="button" name="SubmitButton" onclick="CheckUser(this.form)">Submit</button>
             </div>
         </form>
     </div>
