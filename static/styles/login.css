@@ -59,6 +59,7 @@ label {
     color:#aaa;
     font-size: 20px;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 input {
@@ -83,11 +84,23 @@ input {
     background:#1161ee;
     border: none;
     outline: none;
+    margin-bottom: 18px;
 }
 
 .submit_button button:hover {
     background-color: #0366c4;
 }
+
+a {
+    display: block;
+    color:#aaa;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+a:hover{color: rgb(231, 0, 0);}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
