@@ -17,7 +17,7 @@ To access the normal user's pages, please fill in "user" for username and pass f
 
 ## Urls
 
-* [Log In]()
+* [Log In](https://calvinpete.github.io/StoreManager/login.html)
 
 ## Features
 
