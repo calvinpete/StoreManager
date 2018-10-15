@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>POS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/user_point_of_sale.css" />
+</head>
+<body id="sale_point">
+    <div class="header">
+        <a href="user_home.html" class="logo">Store Manager</a>
+        <div class="header-right">
+            <button class="empty-cart" name="clear_button">clear</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buyer-cart">
+            <div class="shopping-cart">
+                <table class="stock-table">
+                    <tr>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Subtotal</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr class="product">
+                        <td>UHT milk choclate flavor 250ml</td>
+                        <td>2 packets</td>
+                        <td>1500.00</td>
+                        <td>3000.00</td>
+                        <td>0.00</td>
+                        <td>3000.00</td>
+                    </tr>
+                    <tr class="product">
+                        <td>Omo Detergent 1kg Odinary</td>
+                        <td>1 packet</td>
+                        <td>8000.00</td>
+                        <td>8000.00</td>
+                        <td>0.00</td>
+                        <td>8000.00</td>
+                    </tr>
+                    <tr class="product">
+                        <td>Umoja Footwear size 9</td>
+                        <td>3</td>
+                        <td>1800.00</td>
+                        <td>5400.00</td>
+                        <td>0.00</td>
+                        <td>5400.00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="calculator">
+                <div class="total">
+                    <table class="total-table">
+                        <tr>
+                            <th colspan="2">Grand Total</th>
+                        </tr>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td>16400.00</td>
+                        </tr>
+                        <tr>
+                            <td>Discount:</td>
+                            <td>0.00</td>    
+                        </tr>
+                        <tr>
+                            <td>Tax:</td>
+                            <td>0.00</td>    
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td><h2>16400.00</h2></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <button class="cash" type="button" name="cash_button">Cash</button>
+                    <button class="credit" type="button" name="credit_button">Credit</button>
+                    <button class="save" type="button" name="save_button">Save</button>                
+                </div>
+            </div>
+        </div>
+        <div class="search-inventory">
+            <div class="search-product">
+                <label for="Search">Search:</label>
+                <input type="text" id="Search" name="search" placeholder="search inventory"/>
+            </div>
+            <table class="stock-table">
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Product Description</th>
+                    <th>Cost (Shs.)</th>
+                    <th>Price (Shs.)</th>
+                    <th>Action</th>
+                </tr>
+                <tr class="product">
+                    <td>001</td>
+                    <td>UHT milk</td>
+                    <td>Drinks</td>
+                    <td>choclate Flavour</td>
+                    <td>1000</td>
+                    <td>1200</td>
+                    <td class="actions">
+                        <button type="button" class="view-info" onclick="ShowHide('001')" name="view_product">info</button>
+                    </td>
+                </tr>
+                <tr id="001">
+                    <td colspan="7">
+                        <p>Quantity held in stock: 1 box(@24 boxes)</p>
+                        <p>Minimum allowed in stock: 2 boxes(@24 boxes)</p>
+                    </td>
+                </tr>
+                <tr class="product">
+                    <td>002</td>
+                    <td>Omo</td>
+                    <td>Detergent</td>
+                    <td>1kg odinary</td>
+                    <td>7500</td>
+                    <td>8000</td>
+                    <td class="actions">
+                        <button type="button" class="view-info" onclick="ShowHide('002')" name="view_product">info</button>
+                    </td>
+                </tr>
+                <tr id="002">
+                    <td colspan="7">
+                        <p>Quantity held in stock: 0</p>
+                        <p>Minimum allowed in stock: 5 boxes(@24 packets)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
