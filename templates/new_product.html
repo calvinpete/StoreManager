@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/user_register.css" />
+</head>
+<body>
+    <div class="header">
+        <a href="admin_home.html" class="logo">Store Manager</a>
+        <div class="header-right">
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+    <div class="product-details">
+        <div class="title">
+            <h2>Add a new Product</h2>
+        </div>
+        <form class="register">
+            <div class="name">
+                <label for="PdtName">Name of the product:</label>
+                <input type="text" name="product_name" id="PdtName" placeholder="product name" required />
+            </div>
+            <div class="product-code">
+                <label for="PdtCode">Product code:</label>
+                <input type="number" name="ProductCode" id="PdtCode" placeholder="product code" required />
+            </div>
+            <div class="group">
+                <label for="Category">Category:</label>
+                <select>
+                    <option>Drinks</option>
+                    <option>Spice</option>
+                    <option>Foot wear</option>
+                    <option>Snacks</option>
+                    <option>Utencils</option>
+                </select>
+            </div>
+            <div class="product-description">
+                <label for="PdtDes">Product Description:</label>
+                <input type="text" name="details" id="PdtDes" placeholder="product description" required/>
+            </div>
+            <div class="cost">
+                <label for="ct">Cost(shs.):</label>
+                <input type="number" min="1" step="any" name="cost_price" id="ct" placeholder="cost price" required />
+            </div>
+            <div class="price">
+                <label for="Rtpx">Price(shs.):</label>
+                <input type="number" min="1" step="any" name="retail_price" id="Rtpx" placeholder="retail price" required />
+            </div>
+            <div class="add-button">
+                <button type="button" name="SubmitButton">Add the Product</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

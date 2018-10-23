@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-top: 15px;
+    padding: 1.5%;
+    box-sizing: border-box;
+}
+
+.container a {text-decoration: none;}
+
+.card_1 {background-color: rgb(0, 134, 22);}
+
+.card_2 {background-color: rgb(84, 0, 163);}
+
+.card_3 {background-color: rgb(190, 0, 0);}
+
+.card_4 {background-color: rgb(190, 161, 0);}
+
+.card_1, .card_2, .card_3, .card_4 {
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 180px;
+    box-shadow: 0 2px 5px rgba(148, 112, 112, 0.1);
+    position: relative;
+    transition: all .1s ease-in;
+    position: relative;
+    margin: 20px 20px; 
+    padding-top: 20px;
+	padding-bottom: 30px; 
+}
+
+.card_1:hover, .card_2:hover, .card_3:hover, .card_4:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+span {display: block;}
+
+.card-header {
+    height: 100px;
+    padding-top: 30px;
+}
+
+.card-title {
+    padding: 3.5% 0 2.5% 0;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0 3.5%;
+    margin: 0;
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inventory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/inventory.css" />
+</head>
+<body>
+    <div class="header">
+        <a href="user_inventory.html" class="logo">Store Manager</a>
+        <div class="header-right">
+            <button onclick="goBack()" type="button" name="Back">Back</button>
+        </div>
+    </div>
+    <div class="stock">
+        <div class="search-product">
+            <label for="Search">Search:</label>
+            <input type="text" id="Search" name="search" />
+        </div>
+        <table class="stock-table">
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Product Description</th>
+                <th>Cost (Shs.)</th>
+                <th>Price (Shs.)</th>
+                <th>Action</th>
+            </tr>
+            <tr class="product">
+                <td>001</td>
+                <td>UHT milk</td>
+                <td>Drinks</td>
+                <td>choclate Flavour</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td class="actions">
+                    <button type="button" class="view-info" onclick="ShowHide('001')" name="view_product">View</button>
+                </td>
+            </tr>
+            <tr id="001">
+                <td colspan="7">
+                    <p>Quantity held in stock: 1 box(@24 boxes)</p>
+                    <p>Minimum allowed in stock: 2 boxes(@24 boxes)</p>
+                </td>
+            </tr>
+            <tr class="product">
+                <td>002</td>
+                <td>Omo</td>
+                <td>Detergent</td>
+                <td>1kg odinary</td>
+                <td>7500</td>
+                <td>8000</td>
+                <td class="actions">
+                    <button type="button" class="view-info" onclick="ShowHide('002')" name="view_product">View</button>
+                </td>
+            </tr>
+            <tr id="002">
+                <td colspan="7">
+                    <p>Quantity held in stock: 1 box(@24 packets)</p>
+                    <p>Minimum allowed in stock: 2 boxes(@24 packets)</p>
+                </td>
+            </tr>
+            <tr class="product">
+                <td>021</td>
+                <td>Umoja</td>
+                <td>Footwear</td>
+                <td>size 9</td>
+                <td>1500</td>
+                <td>1800</td>
+                <td class="actions">
+                    <button type="button" class="view-info" onclick="ShowHide('021')" name="view_product">View</button>
+                </td>
+            </tr>
+            <tr id="021">
+                <td colspan="7">
+                    <p>Quantity held in stock: 0</p>
+                    <p>Minimum allowed in stock: 2 dozens(@12 pairs)</p>
+                </td>
+            </tr>
+            <tr class="product">
+                <td>040</td>
+                <td>G.nuts</td>
+                <td>Snacks</td>
+                <td>100g chilli spiced</td>
+                <td>300</td>
+                <td>500</td>
+                <td class="actions">
+                    <button type="button" class="view-info" onclick="ShowHide('040')" name="view_product">View</button>
+                </td>
+            </tr>
+            <tr id="040">
+                <td colspan="7">
+                    <p>Quantity held in stock: 15 sachets</p>
+                    <p>Minimum allowed in stock: 20 sachets</p>
+                </td>
+            </tr>
+            <tr class="product">
+                <td>922</td>
+                <td>Ginger</td>
+                <td>Spice</td>
+                <td>12g African spice</td>
+                <td>800</td>
+                <td>1000</td>
+                <td class="actions">
+                    <button type="button" class="view-info" onclick="ShowHide('922')" name="view_product">View</button>
+                </td>
+            </tr>
+            <tr id="922">
+                <td colspan="7">
+                    <p>Quantity held in stock: 1 box(@24)</p>
+                    <p>Minimum allowed in stock: 2 boxes(@24)</p>
+                </td>
+            </tr>
+            <tr class="product">
+                <td>101</td>
+                <td>Tusker</td>
+                <td>Beverage</td>
+                <td>300ml Malt</td>
+                <td>3500</td>
+                <td>5000</td>
+                <td class="actions">
+                    <button type="button" class="view-info" onclick="ShowHide('101')" name="view_product">View</button>
+                </td>
+            </tr>
+            <tr id="101">
+                <td colspan="7">
+                    <p>Quantity held in stock: 2 crates(@25b0ttles)</p>
+                    <p>Minimum allowed in stock: 5 crates(@25b0ttles)</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

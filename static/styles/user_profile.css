@@ -1,0 +1,45 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info, .summary-report {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.pic, .identity, .contact-info {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pic, .identity, .contact-info, .card {
+    border-radius: 5px;
+    color: #fff9ff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    background-color: #686868;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.007);
+    border: none;
+    position: relative;
+    transition: all .1s ease-in;
+    width: 300px;
+    margin: 20px 20px; 
+    padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.card{
+    text-align: center;
+}
+
+td{padding-left: 50px;}
+
+td, li {text-align: left;}
+
+ol {padding-left: 110px;}
+
+li{padding-left: 20px;}
