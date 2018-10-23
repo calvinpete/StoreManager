@@ -8,45 +8,48 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../static/styles/login.css" />
 </head>
 <body>
-    <div class="header">
-        <h1>Store Manager</h1>
-        <div class="buttons">
-            <button class="login_link" onclick="show(event, 'admin_login')" type="button" name="admin_login_button">Store Owner Login</button>
-            <button class="login_link" onclick="show(event, 'user_login')" type="button" name="user_login_button">Store Attendant Login</button>
+    <div class="bg-image"></div>
+    <div class="content">
+        <div class="header">
+            <h1>Store Manager</h1>
+            <div class="buttons">
+                <button class="login_link" onclick="show(event, 'admin_login')" type="button" name="admin_login_button">Store Owner Login</button>
+                <button class="login_link" onclick="show(event, 'user_login')" type="button" name="user_login_button">Store Attendant Login</button>
+            </div>
         </div>
-    </div>
-    <div class="personal_details" id="admin_login">
-        <form class="login">
-            <div class="username">
-                <label for="Admin_Username">Admin username: </label>
-                <input type="text" name="admin_name" id="Admin_Username" placeholder="User name" required />
-            </div>
-            <div class="password">
-                <label for="admin_pwd">Admin password: </label>
-                <input type="password" name="Admin_Password" id="admin_pwd" placeholder="Password" required />    
-            </div>
-            <div class="submit_button">
-                <button type="button" name="SubmitButton" onclick="check(this.form)">Submit</button>
-            </div>
-            <div class="signup">
-                <a href="signup.html">click here to signup</a>
-            </div>
-        </form>
-    </div>
-    <div class="personal_details" id="user_login">
-        <form class="login">
-            <div class="username">
-                <label for="Username">Username: </label>
-                <input type="text" name="user_name" id="Username" placeholder="User name" required />
-            </div>
-            <div class="password">
-                <label for="pwd">Password: </label>
-                <input type="password" name="Password" id="pwd" placeholder="Password" required />    
-            </div>
-            <div class="submit_button">
-                <button type="button" name="SubmitButton" onclick="CheckUser(this.form)">Submit</button>
-            </div>
-        </form>
+        <div class="personal_details" id="admin_login">
+            <form class="login">
+                <div class="username">
+                    <label for="Admin_Username">Admin username: </label>
+                    <input type="text" name="admin_name" id="Admin_Username" placeholder="User name" required />
+                </div>
+                <div class="password">
+                    <label for="admin_pwd">Admin password: </label>
+                    <input type="password" name="Admin_Password" id="admin_pwd" placeholder="Password" required />    
+                </div>
+                <div class="submit_button">
+                    <button type="button" name="SubmitButton" onclick="check(this.form)">Submit</button>
+                </div>
+                <div class="signup">
+                    <a href="signup.html">click here to signup</a>
+                </div>
+            </form>
+        </div>
+        <div class="personal_details" id="user_login">
+            <form class="login">
+                <div class="username">
+                    <label for="Username">Username: </label>
+                    <input type="text" name="user_name" id="Username" placeholder="User name" required />
+                </div>
+                <div class="password">
+                    <label for="pwd">Password: </label>
+                    <input type="password" name="Password" id="pwd" placeholder="Password" required />    
+                </div>
+                <div class="submit_button">
+                    <button type="button" name="SubmitButton" onclick="CheckUser(this.form)">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="../static/js/main.js"></script>
 </body>

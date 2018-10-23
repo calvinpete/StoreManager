@@ -1,10 +1,24 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    margin: 0;
+}
+
+.bg-image {
     background-image: url(../images/cashier_checkout.jpeg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(5px);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,17 +44,17 @@ body {
     padding: 12px 10px;
     border: none;
     outline: none;
-    background:rgba(91, 106, 145, 0.9);
+    background:rgb(91, 106, 145);
     color:#ffff;
     transition: 0.2s;
 }
 
 .buttons button:hover {
-    background:rgba(43, 61, 107, 0.9);
+    background:rgb(43, 61, 107);
 }
 
 .buttons button.active {
-    background:rgba(43, 61, 107, 0.9);
+    background:rgb(43, 61, 107);
 }
 
 .personal_details{
