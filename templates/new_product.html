@@ -12,7 +12,7 @@
     <div class="header">
         <a href="admin_home.html" class="logo">Store Manager</a>
         <div class="header-right">
-            <a href="login.html">Admin Log out</a>
+            <a href="login.html">Log out</a>
         </div>
     </div>
     <div class="product-details">
@@ -30,11 +30,17 @@
             </div>
             <div class="group">
                 <label for="Category">Category:</label>
-                <input type="text" name="category" id="Category" placeholder="category" required />
+                <select>
+                    <option>Drinks</option>
+                    <option>Spice</option>
+                    <option>Foot wear</option>
+                    <option>Snacks</option>
+                    <option>Utencils</option>
+                </select>
             </div>
             <div class="product-description">
                 <label for="PdtDes">Product Description:</label>
-                <textarea rows="10" cols="19" id="PdtDes" placeholder="product description" required></textarea>
+                <input type="text" name="details" id="PdtDes" placeholder="product description" required/>
             </div>
             <div class="cost">
                 <label for="ct">Cost(shs.):</label>
