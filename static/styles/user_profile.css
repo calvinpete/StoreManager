@@ -1,7 +1,3 @@
-* {box-sizing: border-box;}
-
-#user {background-color: #373737;}
-
 .profile {
     display: flex;
     flex-direction: column;
@@ -23,10 +19,10 @@
 
 .pic, .identity, .contact-info, .card {
     border-radius: 5px;
-    color: #a8a7a8;
+    color: #fff9ff;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.16);
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    background-color: #686868;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.007);
     border: none;
     position: relative;
     transition: all .1s ease-in;
