@@ -23,6 +23,7 @@
     text-align: center;
     border-radius: 5px;
     width: 300px;
+    height: 180px;
     box-shadow: 0 2px 5px rgba(148, 112, 112, 0.1);
     position: relative;
     transition: all .1s ease-in;
