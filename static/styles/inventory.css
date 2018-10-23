@@ -1,12 +1,10 @@
-* {box-sizing: border-box;}
-
 .stock {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 30px 30px ;
-    background-color: #373737;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -14,8 +12,7 @@ label {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 10px;
-    color: #a8a7a8;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+    color: #000000;
 }
 
 input {
@@ -25,8 +22,7 @@ input {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 300;
-    color: #bbb;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(26, 26, 26);
     background: rgba(0, 0, 0, 0.16);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
     border: none;
@@ -46,16 +42,20 @@ th, td {
     border-bottom: 1px inset rgba(0, 0, 0, 0.3);
     text-align: left;
     padding: 8px;
-    color: #bbb;
+    color: rgb(207, 207, 207);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.16);
 }
+
+tr {background-color: #616060}
 
 td button {
     cursor: pointer;
     border: none;
     outline: none;
-    background: rgba(0, 0, 0, 0.16);
+    color: rgb(207, 207, 207);
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 tr[id] {
